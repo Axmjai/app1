@@ -1,18 +1,19 @@
 import React,{Component} from "react";
 
-export default class Calender extends Component{
-    getDate(){
-        const dayNames = ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'] 
-        const monthNames = ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม']
-        const date = new Date()
-        const weekDay = dayNames[date.getDay()]
-        const day = date.getDate()
-        const month = monthNames[date.getMonth()]
-        const year = date.getFullYear() + 543
-        return `วัน ${weekDay} ที่ ${day} ${month} ${year}`
+export default class Button extends Component{
+    showAlert(msg){
+        alert(msg);
     }
-    render(){
-        return <div>{this.getDate()}</div>
 
+
+    onClickButtonOK = () => {
+        this.showAlert("Hellooooooooo");
     }
+
+    render(){
+        return (
+            <button onClick={this.onClickButtonOK}>OK</button>
+        )
+    }
+
 }

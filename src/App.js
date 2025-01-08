@@ -1,16 +1,8 @@
 import React from 'react'
-import Calender from './class-components';
-import { Content, Footer, Header } from './fuc-components';
+import Button from './class-components';
 
-function App() {
-  return (
-    <>
-    <Header/>
-    <p><center><Calender/></center></p>
-    <Content/>
-    <Footer/>
-    </>
-  );
-}
+  function App() {
+    return <Button/>  
+  }
 
 export default App;
