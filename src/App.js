@@ -1,9 +1,9 @@
 import React from 'react'
-import RefFunc from './ref-func'
+import MessageBox from './state-func'
 
 
  function App() {
-    return <RefFunc/>  
+    return <MessageBox/>  
   }
 
   export default App
